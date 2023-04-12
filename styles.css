@@ -23,7 +23,7 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  height: 100px
+ 
 }
 
 #logo {
@@ -60,7 +60,6 @@ a:hover{
   }
 
 .header__inside__block{
-  height: 700px;
   max-width: 50%;
   display: flex;
   flex-direction: column;
@@ -106,7 +105,6 @@ a:hover{
   }
 
 .training{
-  height: 400px;
   max-width: 1024px;
   width: 100%;
   margin-left: auto;
@@ -171,7 +169,6 @@ a:hover{
 }
 
 .about_us{
-  height: 400px;
   max-width: 1024px;
   width: 100%;
   margin-left: auto;
@@ -186,7 +183,8 @@ a:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 50px
+  margin-top: 50px;
+  width: 100%;
   }
 
 .about_us_text{
@@ -251,7 +249,7 @@ a:hover{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 100px;
+ 
   }
 
 .form_inside_name{
@@ -330,7 +328,6 @@ input{
   }
 
 .pricing{
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -461,4 +458,95 @@ li:before{
   align-items: center;
   justify-content: center;
   width: 200px;
+  }
+
+  @media (max-width: 600px)
+  {
+
+  .header__inside__top{
+  width: calc(100%/2);
+    }
+
+  h1{
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .header__inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .header__inside__block{
+    gap: 20px;
+  }
+
+  .header__inside__text {
+    font-size: 18px;
+  }
+
+  .trial_lesson_button {
+    font-size: 18px;
+  }
+
+  .benefit {
+    width: 100%;
+  } 
+
+  .about_us {
+   padding-left: 10px;
+  }
+
+  .about_us_text {
+    width: 100%;
+  }
+
+  #image {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form_inside_form {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .reviews {
+   padding-top: 30px;
+   padding-bottom: 40px;
+  }
+
+  .review__inside {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .review {
+    width: 100%;
+  }
+
+  .training__inside {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  .price__inside{
+    flex-direction: column;
+    justify-content: center;
+    }
+
+  .pricing {
+      margin-top: 20px;
+     }
+
+  .contacts {
+      flex-direction: column;
+      }
   }
